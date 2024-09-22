@@ -1,13 +1,12 @@
 {
   "name": "meet-assistant",
   "version": "1.0.0",
-  "main": "electron.js", // Change this to point to your Electron entry script
+  "main": "electron.js",
   "scripts": {
-    "start": "electron .", // Start the Electron app
-    "dev": "webpack serve --mode development --open", // Start webpack dev server for React
-    "build": "webpack --mode production", // Build your React app for production
-    "electron-build": "npm run build && electron-builder", // Build the Electron app
-    "electron-dev": "concurrently \"npm run dev\" \"npm start\"" // Run development servers for both Electron and React
+    "start": "electron .",
+    "dev": "webpack serve --mode development --open",
+    "electron-build": "npm run build && electron-builder",
+    "electron-dev": "concurrently \"npm run dev\" \"npm start\""
   },
   "keywords": [],
   "author": "",
@@ -16,7 +15,7 @@
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "concurrently": "^7.0.0" // Added to run multiple commands concurrently
+    "concurrently": "^7.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
